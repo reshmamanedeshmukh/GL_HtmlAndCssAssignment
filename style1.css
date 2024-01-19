@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    background-image: url('rain_drop.jpg');
+    display: flex;
+background-repeat: no-repeat;
+flex-direction: column;
+background-attachment: fixed;  
+background-size: cover;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+.main {
+    flex-basis: 4rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color:rgba( 64, 144, 172, 0.65 );
+    opacity: 0.8;
+    
+}
+.main .btn {
+    background-color:  rgba( 64, 144, 172, 1 );
+    border-radius: 0.1rem;
+    transition: background-color 150ms;
+}
+.main .btn:hover {
+    background-color: #3385b5;
+}
+ 
+.house-btn {
+    
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 0.09rem;
+    padding: 0.4rem 0.6rem;
+   
+}
+.house-btn-icon {
+    font-size: 1rem;
+   
+}
+.boards-menu {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.boards-btn {
+    flex-basis: 5rem;
+    font-size: 1.2rem;
+    height: 30px;
+   
+    font-weight: 200;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 0.5rem;
+    
+    padding: 0.5rem 0.7rem;
+}
+.board-search {
+    flex-basis: 8rem;
+    
+    position: relative;
+}
+
+.board-search-input {
+    height: 30PX;
+    border: none;
+    border-radius: 0.3rem;
+    background-color:  rgba( 64, 144, 172, 1 );
+    width: 100%;
+    padding: 0 3rem 0 1rem;
+    color: #fff;
+}
+
+.board-search-input:hover {
+    background-color: #f6fafc;
+   color: black;
+}
+.bars{
+    font-size: 0.8rem;
+   
+    width: 2px;
+    margin-right: 12px;
+}
+.logo {
+    flex: auto;
+    font-family: "Courgette", cursive;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+    margin: 0 2rem;
+   
+    text-align: center;
+   
+    
+}
+.user-settings {
+    display: flex;
+    height: 2rem;
+    color: #fff;
+    
+}
+
+.user-settings-btn {
+    font-size: 1rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.user-settings-btn:last-of-type {
+    margin-right: 0.8rem;
+}
+
+
+.board-info-bar {
+    flex-basis: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 1rem;
+    color: white;
+    background-color: rgba( 128, 128, 128, 0.3 ); 
+    height: 50px;
+    opacity: 0.6;
+    right: 0;
+    left: 0;
+    position: absolute;
+   
+}
+
+.board-controls {
+    display: flex;
+}
+.board-title   .menu-btn{
+    color: white;
+}
+
+.board-controls .btn {
+    margin-right: 1rem;
+}
+
+
+
+.board-info-bar .btn {
+    font-size: 1.2rem;
+    font-weight: 400;
+   transition: background-color 150ms;
+    padding: 0 0.6rem;
+    border-radius: 0.3rem;
+   
+}
+
+.vbar{
+    margin-right: 0.4rem;
+}
+.lists-container {
+    display: flex;
+    align-items: start;
+    margin-top: 100px;
+    padding: 0 0.5rem 0.8rem;
+
+   overflow-x: auto;
+   height: 83.5vh;
+    
+}
+
+.list {
+    flex: 0 0 14rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e4e6;
+    max-height: calc(100vh - 11.8rem);
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+}
+
+.list:last-of-type {
+    margin-right: 0;
+}
+
+.list-title {
+    font-size: 1rem;
+    font-weight: 700;
+    
+    padding: 0.8rem 0.8rem 0.4rem;
+
+    color: #333;
+   
+}
+
+.list-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 0 0.5rem ;
+    padding-bottom: 0rem;
+    /*overflow-y: auto;*/
+}
+
+
+.list-items li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    background-color: #fff;
+    padding: 0.5rem 0.5rem;
+    color: #4d4d4d;
+    border-bottom: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 0.4rem;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.list-items li:last-of-type {
+    margin-bottom: 0;
+}
+.list-items .pen{
+    font-size: 1.1rem;
+   
+       display: none;
+    
+    float: right;
+}
+
+
+.list-items li:hover .pen{
+    display: block;
+    background-color: #eee;
+}
+.list-items li:hover{
+   
+    background-color: #eee;
+}
+.list-items div:hover .add-card-form-actions{
+    background-color: none;
+}
+.add-card-btn {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #838c91;
+    padding: 0.2rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.add-card-btn:hover {
+    color: #cdd2d4;
+   
+}
+
+.add-list-btn {
+    flex: 0 0 27rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: #006aa7;
+    color: #a5cae0;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 150ms;
+    text-align: left;
+}
+
+.add-list-btn:hover {
+    background-color: #005485;
+}
+
+
+.list-title::after {
+    float:right;
+    content: '...';
+}
+.add-card-form-actions {
+    display: flex;
+    flex-shrink: 0;
+   margin-top: 4px;
+}
+
+.add-card-button {
+    margin-right: 8px;
+}
+
+.add-card-cancel {
+    position: relative;
+    top: 3px;
+    cursor: pointer !important;;
+}
+.btn-primary {
+    font-size: large;
+    border-radius: 4px;
+    background-color: olive;
+    color: white;
+}
+
+
+.add-card-cancel:hover {
+    opacity: 0.7;
+}
+
+.add-card-cancel:active {
+    outline: none;
+}
+
+
